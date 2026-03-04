@@ -93,6 +93,7 @@ footer { text-align: center; padding: 1.5rem; border-top: 1px solid #eee; color:
 .gallery-item img:hover {
     opacity: 0.85;
     transition: opacity 0.2s ease;
+}
 
 
 #lightbox {
@@ -117,4 +118,5 @@ footer { text-align: center; padding: 1.5rem; border-top: 1px solid #eee; color:
     box-shadow: 0 10px 40px rgba(0,0,0,0.5);
     cursor: default;
 }
-}
+
+/* v2 */
