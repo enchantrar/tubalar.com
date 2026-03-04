@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}Tubalar{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>Welcome to Tubalar</h1>
+    <p>This is a catalogue for eveything I do, in one place.</p>
+    <a href="{{ url_for('about') }}" class="btn">Learn More</a>  
+</section>
+
+<section class="gallery">
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/photo1.png') }}" alt="Photo 1" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/photo2.png') }}" alt="Photo 2" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/photo3.png') }}" alt="Photo 3" onclick="openLightbox(this)">
+        </div>
+    </div>
+</section>
+
+<div id="lightbox">
+    <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+    function openLightbox(img) {
+        document.getElementById('lightbox-img').src = img.src;
+        document.getElementById('lightbox').classList.add('active');
+    }
+    function closeLightbox() {
+        document.getElementById('lightbox').classList.remove('active');
+    }
+    document.getElementById('lightbox').addEventListener('click', function(e) {
+        if (e.target === this) closeLightbox();
+    });
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeLightbox();
+    });
+</script>
+
+{% endblock %}
