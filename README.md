@@ -1,42 +1,42 @@
-# My Flask Learning Project
+# Tubalar
 
-A beginner Flask app built module by module.
+A personal catalogue of everything I do, in one place.
+Built with plain HTML, CSS, and JavaScript — no frameworks.
 
-## Setup
-
-```bash
-python -m venv venv
-source venv/bin/activate      # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-python app.py
-```
-
-Then visit http://127.0.0.1:5000
+🌐 Live at: https://enchantrar.github.io/tubalar.com
 
 ## Project Structure
 
 ```
-flask_app/
-├── app.py                  # Routes & app logic
-├── requirements.txt
-├── templates/
-│   ├── base.html           # Shared layout (nav, footer, flash messages)
-│   ├── home.html
-│   ├── about.html
-│   └── contact.html
+tubalar.com/
+├── index.html        # Home page with hero & image gallery
+├── about.html        # About me
+├── contact.html      # Contact form (powered by Formspree)
 └── static/
-    └── css/
-        └── style.css
+    ├── css/
+    │   └── style.css
+    └── images/
+        ├── photo1.png
+        ├── photo2.png
+        └── photo3.png
 ```
 
-## Concepts Covered
+## Features
 
-| Concept | Where |
-|---|---|
-| `@app.route` | `app.py` |
-| GET vs POST | `contact` route |
-| `render_template` | all routes |
-| Template inheritance | `base.html` + child templates |
-| `url_for` | nav links in templates |
-| Flash messages | contact form |
-| Static files | `style.css` |
+- Responsive image gallery with lightbox
+- Contact form connected to email via Formspree
+- Custom typography using Google Fonts (Bricolage Grotesque + DM Serif Display)
+- Smooth scroll animations
+- Hosted on GitHub Pages
+
+## Local Development
+
+No build step needed. Just open `index.html` in your browser directly, or use a simple local server:
+
+```bash
+npx serve .
+```
+
+## Deployment
+
+Pushed to `main` branch → GitHub Pages deploys automatically.
