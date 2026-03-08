@@ -2,7 +2,7 @@
 
 body {
     font-family: Georgia, serif;
-    background: #dfccb5;
+    background: #2d2924;
     color: #1a1a1a;
     line-height: 1.7;
 }
@@ -14,7 +14,7 @@ nav {
     align-items: center;
     padding: 1rem 2rem;
     border-bottom: 2px solid #1a1a1a;
-    background: #fff2ea;
+    background: #615e5b;
 }
 nav .logo { font-size: 1.4rem; font-weight: bold; text-decoration: none; color: #1a1a1a; }
 nav ul { list-style: none; display: flex; gap: 2rem; }
