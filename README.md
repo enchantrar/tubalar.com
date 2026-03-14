@@ -1,7 +1,7 @@
 # Tubalar
 
 A personal catalogue of everything I do, in one place.
-Built with plain HTML, CSS, and JavaScript — no frameworks.
+Built with plain HTML, CSS, and JavaScript, no frameworks.
 
 🌐 Live at: https://enchantrar.github.io/portfolio
 
